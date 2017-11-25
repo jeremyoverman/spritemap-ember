@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"> {{model.username}}'s Profile </div>
+            <div class="panel-body">
+                :)
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        {{sprite-list sprites=model.sprites}}
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">Sprite Maps</div>
+            <div class="panel-body">
+            </div>
+        </div>
+    </div>
+</div>
+{{yield}}

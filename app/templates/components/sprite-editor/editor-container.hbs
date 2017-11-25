@@ -1,0 +1,15 @@
+{{#tool-panel/tool-panel title="Sprite Editor" as |tp|}}
+    {{#tp.toolbar as |toolbar|}}
+        <div class="btn-group">
+            {{toolbar.btn text="-" disabled=isZoomedOut onClick=(action 'zoom' 'out')}}
+            {{toolbar.btn text="+" onClick=(action 'zoom' 'in')}}
+        </div>
+        {{toolbar.btn text="Grid" float='right' active=isGridActive onClick=(action 'toggleGrid')}}
+    {{/tp.toolbar}}
+    {{#if sprite}}
+        {{sprite-editor/creator-canvas
+            sprite=sprite
+            isGridActive=isGridActive
+            zoom=zoom}}
+    {{/if}}
+{{/tool-panel/tool-panel}}

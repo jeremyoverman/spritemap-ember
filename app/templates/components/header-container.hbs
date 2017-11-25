@@ -1,0 +1,12 @@
+<div class="continer-fluid">
+    <div class="navbar-header">
+        {{#link-to "index" class="navbar-brand"}}{{brand}}{{/link-to}}
+    </div>
+    <ul class="nav navbar-nav">
+        {{#each routes as |route|}}
+            <li class="{{if route.active "active"}}">
+                {{#link-to route.path}}{{route.name}}{{/link-to}}
+            </li>
+        {{/each}}
+    </ul>
+</div>

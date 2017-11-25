@@ -1,0 +1,32 @@
+.sprite-list {
+    .panel-body {
+        padding: 0px;
+
+        ul {
+            list-style: none;
+            padding-left: 0px;
+            margin-bottom: 0px;
+
+            li {
+                padding: 10px 10px;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid @bsLightGray;
+                }
+
+                .preview {
+                    width: 45px;
+                    float: left;
+                }
+
+                .name {
+                    font-size: 1.2em;
+                }
+
+                .last-modified {
+                    color: #666;
+                }
+            }
+        }
+    }
+}
